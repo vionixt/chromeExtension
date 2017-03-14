@@ -1,15 +1,15 @@
-setTimeout(function () {hideMyObj1()},100);
-setTimeout(function() {hideMyObj2()},100);
-function hideMyObj1() {
+setTimeout(function () {hideMyLogo()},100);
+setTimeout(function() {hideMySearchBar()},100);
+function hideMyLogo() {
 	var object = document.getElementById('lga');
-    if(object){
+    	if(object){
 		object.style.height = "0px";
 		object.style.visibility = 'hidden';
 	}
 }
-function hideMyObj2() {
+function hideMySearchBar() {
 	var object = document.getElementById('f');
-    if(object){
+    	if(object){
 		object.style.height = "0px";
 		object.style.visibility = 'hidden';
 	}

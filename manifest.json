@@ -1,0 +1,24 @@
+{
+    "name": "bibh",
+    "version": "0.0.2",
+    "manifest_version": 2,
+	"permissions": [
+          "tabs"
+    ],
+    "browser_action": {
+		"default_icon": {
+			"19": "icons/abcd1.png",
+			"38": "icons/abcd2.png"
+		},
+        "default_title": "TAB"
+    },
+	"background": {
+		"scripts": ["background.js"],
+		"persistent": true
+	},
+	"content_scripts": [{
+        "matches": ["http://*/*", "https://*/*"],
+        "js": ["content.js"]
+    }
+	]
+}
